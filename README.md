@@ -27,8 +27,19 @@ You’ll find both `.ipynb` and `.py` versions of each file to suit your workflo
 
 | `pacs-cartoontest-clip-vit-b16-rn50.ipynb`  
 → `pacs-cartoontest-clip-vit-b16-rn50.py` | Testing Cartoon domain using ViT-B/16 and RN50 |
+-- similarly rest notebooks---
 
 ---
+- **GRL + Mixup (Fixed Version)**:  `fixed-sketch.ipynb`
+  Trains a ResNet18-based model using Gradient Reversal Layer (GRL) and Mixup on source domain features for domain generalization.
+
+- Focuses on **cross-domain testing** by training on three PACS domains and evaluating on an unseen fourth domain (like 'sketch').
+
+- **GRL + Mixup + Domain-Specific Split (ViT-B/16)**:  `Cross_domain-gen_cartoon.ipynb`
+  Trains using only one PACS domain (e.g., 'cartoon') with an 80/20 train-validation split.  
+  Uses GRL for domain confusion and Mixup for better generalization across domains. Evaluates performance on all unseen domains.
+
+- Focused on **cross-domain generalization** using ViT-B/16 as the backbone, with large margin loss added to improve class separation.
 
 
 ## 💡 How to Use
