@@ -51,5 +51,5 @@ You’ll find both `.ipynb` and `.py` versions of each file to suit your workflo
 
 ## 🎯 Goal of This Project
 
-To explore how domain-specific tweaks (like prompt tuning or combined models) can improve generalization of CLIP models across different image domains in PACS.
+To explore how domain-specific tweaks like soft prompts, GRL, Mixup, and large margin loss improve CLIP model generalization across unseen domains in PACS using backbones like ResNet18 and ViT-B/16.
 
